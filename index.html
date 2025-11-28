@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Carolina | Desenvolvedora Web</title>
+    <link rel="icon" type="image/png" href="./src/logo.png">
+
+    <!-- Tailwind CSS (Via CDN para desenvolvimento rápido) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração de cores personalizadas e fontes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#e0c3fc',
+                            DEFAULT: '#8ec5fc',
+                            dark: '#4a00e0' // Exemplo de roxo mais escuro
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fonte Inter (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Classe utilitária para esconder elementos antes da animação */
+        .reveal-hidden { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal-visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-300 via-purple-300 to-blue-300 min-h-screen text-slate-800 antialiased selection:bg-purple-500 selection:text-white">
+
+    <header class="fixed top-0 w-full z-50 transition-all duration-300" id="navbar">
+        <div class="absolute inset-0 bg-white/10 backdrop-blur-md border-b border-white/20 shadow-sm"></div>
+        <div class="container mx-auto px-6 py-4 relative flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white tracking-wider">ACL</h1> <!-- Logo ou Nome do Site -->
+            <nav>
+                <ul class="flex space-x-6 text-white font-medium">
+                    <li> <a href="#home" class="hover:text-purple-600 transition-colors">Início</a></li>
+                    <li><a href="#habilidades" class="hover:text-purple-600 transition-colors">Habilidades</a></li>
+                    <li><a href="#projetos" class="hover:text-purple-600 transition-colors">Projetos</a></li>
+                    <li><a href="#contato" class="hover:text-purple-600 transition-colors">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home" class="min-h-screen flex items-center justify-center pt-20">
+            <div class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-center gap-12">
+                <div class="reveal-element md:w-1/2 bg-white/20 backdrop-blur-lg border border-white/30 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    <h2 class="text-3xl font-bold text-white mb-4">Bem-vindo ao meu portfólio</h2>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
