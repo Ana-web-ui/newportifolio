@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados | Ana Carolina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { light: '#e0c3fc', DEFAULT: '#8ec5fc', dark: '#4a00e0' } }
+                }
+            }
+        }
+    </script>
+</head>
+<!-- Fundo Roxo Suave para destacar os certificados -->
+<body class="bg-slate-50 min-h-screen font-['Inter'] selection:bg-pink-300">
+
+    <!-- Header Simples com botão Voltar -->
+    <header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-purple-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 text-purple-900 font-bold hover:text-pink-500 transition-colors">
+                <span class="text-xl">⬅</span> Voltar para Home
+            </a>
+            <span class="font-['Caveat'] text-2xl text-purple-900">Ana Carolina Leite</span>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 px-6">
+        <div class="container mx-auto">
+            
+            <!-- Título da Galeria -->
+            <div class="text-center mb-16">
+                <h1 class="font-['Caveat'] text-6xl text-purple-900 mb-4">Minhas Conquistas 🏆</h1>
+                <p class="text-slate-600 max-w-xl mx-auto">
+                    Aqui estão reunidos todos os certificados da minha jornada. 
+                    Do Design ao Código, cada um representa um passo na minha evolução.
+                </p>
+            </div>
+
+            <!-- GALERIA MASONRY (Estilo Pinterest) -->
+            <!-- 'columns-1 md:columns-3' cria as colunas verticais -->
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+
+                <!-- ITEM 1 -->
+                <div class="break-inside-avoid bg-white p-4 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
+                    <img src="https://via.placeholder.com/600x400" alt="Certificado" class="w-full rounded-lg mb-4">
+                    <h3 class="font-bold text-lg text-slate-800">Bootcamp Full Stack</h3>
+                    <p class="text-sm text-pink-500 font-semibold">Rocketseat • 2024</p>
+                </div>
+
+                <!-- ITEM 2 (Tente usar imagens verticais e horizontais misturadas) -->
+                <div class="break-inside-avoid bg-white p-4 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
+                    <img src="https://via.placeholder.com/400x500" alt="Certificado Vertical" class="w-full rounded-lg mb-4">
+                    <h3 class="font-bold text-lg text-slate-800">UX Design Masterclass</h3>
+                    <p class="text-sm text-pink-500 font-semibold">Google • 2023</p>
+                    <p class="text-xs text-slate-500 mt-2">Curso focado em pesquisa com usuários e prototipação.</p>
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="break-inside-avoid bg-white p-4 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
+                    <img src="https://via.placeholder.com/600x400" alt="Certificado" class="w-full rounded-lg mb-4">
+                    <h3 class="font-bold text-lg text-slate-800">Oracle SQL Database</h3>
+                    <p class="text-sm text-pink-500 font-semibold">Oracle • 2023</p>
+                </div>
+
+                <!-- ITEM 4 -->
+                <div class="break-inside-avoid bg-white p-4 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
+                    <img src="https://via.placeholder.com/600x400" alt="Certificado" class="w-full rounded-lg mb-4">
+                    <h3 class="font-bold text-lg text-slate-800">Introdução ao Git</h3>
+                    <p class="text-sm text-pink-500 font-semibold">Udemy • 2022</p>
+                </div>
+
+                 <!-- ITEM 5 -->
+                 <div class="break-inside-avoid bg-white p-4 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100">
+                    <img src="https://via.placeholder.com/400x600" alt="Certificado" class="w-full rounded-lg mb-4">
+                    <h3 class="font-bold text-lg text-slate-800">Figma Avançado</h3>
+                    <p class="text-sm text-pink-500 font-semibold">Design Course • 2024</p>
+                </div>
+                
+                <!-- Adicione mais divs aqui... -->
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white py-6 text-center text-slate-500 border-t border-slate-200">
+        <p>&copy; 2025 Ana Carolina Leite</p>
+    </footer>
+
+</body>
+</html>
