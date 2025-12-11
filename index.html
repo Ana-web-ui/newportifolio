@@ -113,18 +113,18 @@
       <!-- ========================= HOME ========================= -->
       <section
         id="home"
-        class="min-h-screen pt-24 sm:pt-24 md:pt-20 flex flex-col justify-end relative overflow-hidden"
+        class="min-h-screen pt-32 sm:pt-24 md:pt-20 flex flex-col justify-end relative overflow-hidden"
       >
         <div
           class="container mx-auto px-4 sm:px-6 h-full flex flex-col md:flex-row items-end justify-center md:gap-4"
         >
           <!-- FOTO -->
           <div
-            class="relative w-full md:w-5/12 flex justify-center md:justify-end z-10"
+            class="relative w-full md:w-5/12 flex justify-center md:justify-end z-10 mb-8 md:mb-0"
           >
             <!-- texto curvado -->
             <div
-              class="absolute -top-16 left-1/2 -translate-x-1/2 md:left-auto md:right-10 md:translate-x-0 w-48 h-48 animate-spin-slow pointer-events-none"
+              class="absolute -top-2 sm:top-0 left-1/2  -translate-x-1/2 md:top-[3rem] md:right-10 md:translate-x-0 w-40 h-40 sm:w-48 sm:h-48 animate-spin-slow pointer-events-none"
             >
               <svg viewBox="0 0 200 200" class="w-full h-full">
                 <path
@@ -133,7 +133,7 @@
                   fill="none"
                 />
                 <text
-                  class="text-xl font-bold fill-white font-['Caveat'] tracking-widest"
+                  class="text-lg sm:text-xl font-bold fill-white font-['Caveat'] tracking-widest"
                 >
                   <textPath
                     href="#curve"
@@ -147,7 +147,7 @@
             </div>
 
             <div
-              class="absolute top-0 left-10 text-yellow-300 text-5xl animate-bounce drop-shadow-lg"
+              class="absolute top-10 sm:top-8 left-6 sm:left-10 text-yellow-300 text-4xl sm:text-5xl animate-bounce drop-shadow-lg"
             >
               ✨
             </div>
@@ -155,7 +155,7 @@
             <img
               src="./src/foto.png"
               alt="Ana Carolina"
-              class="w-auto h-auto max-h-[60vh] md:max-h-[85vh] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+              class="w-auto h-auto max-h-[55vh] sm:max-h-[60vh] md:max-h-[85vh] object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
             />
           </div>
 
@@ -171,10 +171,10 @@
             </h2>
 
             <div
-              class="bg-white/10 backdrop-blur-md border border-white/20 p-6 sm:p-8 rounded-3xl shadow-xl hover:shadow-purple-500/20 transition-all duration-300"
+              class="bg-white/10 backdrop-blur-md border border-white/20 p-5 sm:p-6 md:p-8 rounded-3xl shadow-xl hover:shadow-purple-500/20 transition-all duration-300"
             >
               <p
-                class="text-base sm:text-lg text-white font-light leading-relaxed"
+                class="text-sm sm:text-base md:text-lg text-white font-light leading-relaxed"
               >
                 Meu nome é
                 <strong class="font-bold text-pink-200">Ana Carolina</strong> e
@@ -188,11 +188,11 @@
             </div>
 
             <div
-              class="mt-6 flex gap-4 justify-center md:justify-start flex-wrap"
+              class="mt-5 sm:mt-6 flex gap-4 justify-center md:justify-start flex-wrap"
             >
               <a
                 href="#contato"
-                class="bg-white text-purple-600 px-6 py-2 rounded-full font-bold hover:bg-purple-100 transition-colors shadow-lg"
+                class="bg-white text-purple-600 px-6 py-2 rounded-full font-bold hover:bg-purple-100 transition-colors shadow-lg text-sm:text-base"
               >
                 Vamos conversar?
               </a>
@@ -342,7 +342,35 @@
                       class="w-full h-3 bg-white rounded-full overflow-hidden shadow-sm"
                     >
                       <div
-                        class="h-full bg-red-600 w-[70%] rounded-full group-hover:scale-x-105 origin-left transition-transform duration-500"
+                        class="h-full bg-red-600 w-[50%] rounded-full group-hover:scale-x-105 origin-left transition-transform duration-500"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="group">
+                    <div
+                      class="flex justify-between mb-1 text-sm font-bold text-purple-900"
+                    >
+                      <span>python</span>
+                    </div>
+                    <div
+                      class="w-full h-3 bg-white rounded-full overflow-hidden shadow-sm"
+                    >
+                      <div
+                        class="h-full bg-green-600 w-[50%] rounded-full group-hover:scale-x-105 origin-left transition-transform duration-500"
+                      ></div>
+                    </div>
+                  </div>
+                   <div class="group">
+                    <div
+                      class="flex justify-between mb-1 text-sm font-bold text-purple-900"
+                    >
+                      <span>JAVA</span>
+                    </div>
+                    <div
+                      class="w-full h-3 bg-white rounded-full overflow-hidden shadow-sm"
+                    >
+                      <div
+                        class="h-full bg-yellow-600 w-[30%] rounded-full group-hover:scale-x-105 origin-left transition-transform duration-500"
                       ></div>
                     </div>
                   </div>
@@ -414,6 +442,20 @@
                     >
                       <div
                         class="h-full bg-green-500 w-[75%] rounded-full group-hover:scale-x-105 origin-left transition-transform duration-500"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="group">
+                    <div
+                      class="flex justify-between mb-1 text-sm font-bold text-purple-900"
+                    >
+                      <span>FastAPI</span>
+                    </div>
+                    <div
+                      class="w-full h-3 bg-white rounded-full overflow-hidden shadow-sm"
+                    >
+                      <div
+                        class="h-full bg-yellow-500 w-[75%] rounded-full group-hover:scale-x-105 origin-left transition-transform duration-500"
                       ></div>
                     </div>
                   </div>
